@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <EditText
+        android:id="@+id/editTextInput"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/editTextInput">
+
+         <LinearLayout
+            android:id="@+id/firstLine"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editTextInput">
+
+            <Button
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:onClick="setOne"
+                android:id="@+id/buttonOne" />
+            <Button
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:text="2"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:onClick="setTwo"
+                android:id="@+id/buttonTwo" />
+            <Button
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:text="3"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:onClick="setThree"
+                android:id="@+id/buttonThree" />
+
+             <Button
+                 android:id="@+id/buttonDivide"
+                 android:layout_width="98dp"
+                 android:layout_height="70dp"
+                 android:onClick="divide"
+                 android:textAlignment="center"
+                 android:textSize="20dp"
+                 android:text="/" />
+         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/secondLine"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editTextInput">
+
+            <Button
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:text="4"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:onClick="setFour"
+                android:id="@+id/buttonFour" />
+            <Button
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:text="5"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:onClick="setFive"
+                android:id="@+id/buttonFive" />
+            <Button
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:text="6"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:onClick="setSix"
+                android:id="@+id/buttonSix" />
+            <Button
+                android:id="@+id/buttonMultiply"
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:onClick="multiply"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:text="*" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/thirdLine"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editTextInput">
+
+            <Button
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:text="7"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:onClick="setSeven"
+                android:id="@+id/buttonSeven" />
+            <Button
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:text="8"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:onClick="setEight"
+                android:id="@+id/buttonEight" />
+            <Button
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:text="9"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:onClick="setNine"
+                android:id="@+id/buttonNine" />
+
+            <Button
+                android:id="@+id/buttonSubtract"
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:onClick="subtract"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:text="-" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fourthLine"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editTextInput">
+
+            <Button
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:text="."
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:onClick="setDecimal"
+                android:id="@+id/buttonDecimal" />
+            <Button
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:onClick="setZero"
+                android:id="@+id/buttonZero" />
+            <Button
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:text="="
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:onClick="equal"
+                android:id="@+id/buttonEqual" />
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="98dp"
+                android:layout_height="70dp"
+                android:onClick="add"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:text="+" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
